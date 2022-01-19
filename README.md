@@ -6,8 +6,11 @@ Os exercícios serão executados utilizando o banco de dados gratuito MySQL Work
 
 
 ## Você aprenderá:
-1. Instalar o MySQL Workbench
-2. Instalar o WAMP Server
-3. Os principais comandos da linguagem SQL
+1. Entendendo o que é o Banco de Dados
+2. Instalar o MySQL Workbench
+3. Explorando o MySQL Workbench
+4. Instalar o WAMP Server
+5. Os principais comandos da linguagem SQL
+6. Criação de um banco de dados com MySQL (prática)
 
 
