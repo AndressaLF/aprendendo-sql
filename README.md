@@ -1,6 +1,6 @@
 # Iniciando o aprendizado da Linguagem SQL
 
-Nesse repositório você encontrada tudo que precisa saber para iniciar seu aprendizado da linguagem SQL. 
+Nesse repositório você encontrada tudo que precisa saber para iniciar seu aprendizado da linguagem SQL. Os exercícios serão executados utilizando o gerenciador de banco de dados gratuito MySQL.
 
 
 
