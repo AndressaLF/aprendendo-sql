@@ -156,7 +156,41 @@ order by nome;
 Confira a resposta na imagem abaixo:
 ![Resposta da questão 13](../img/exercicio13_parte2.PNG)
 
+14. Criando o relacionamento de ``n para 1`` entre as tabelas gafanhotos e cursos.
 
+Lembre-se das regras abaixo:
+
+- Quando o relacionamento é ``1:1``:
+  - Podemos juntas as tabelas em uma só, se fizer sentido;
+  - A chave primária da tabela secundária passa para a tabela dominante como chave estrangeira.
+
+- Quando o relacionamento é `1:n` ou `n:1`:
+  - A chave primária da tabela que representa o relacionamento ``1`` e passa para a tabela que representa o lado ``n`` como chave estrangeira.
+
+- Quando o relacionamento é `n:n`:
+  - O relacionamento entre as tabelas virá uma nova tabela(entidade);
+  - Essa nova tabela estabelecerá um relacionamento de ``n:1`` com as duas outras tabelas já existentes. Nessa situação as tabelas já existentes poderão ter ``n`` interações com a nova, enquanto que ela só poderá ter ``1`` interação com as demais. 
+
+Nesse exemplo, vamos seguir a regra do ``n:1`` a partir dos passos descritos abaixo:
+
+   
+Quero descrever a relação de um aluno que possui um curso preferido. Esse aluno se encontra na tabela ``gafanhoto`` e os cursos na tabela ``curso``.Essa relação será ``n:1``, pois um aluno só pode ter um curso preferido enquanto que um curso pode ser preferido por mais de um aluno.
+
+1. Como essa relação é de ``n:1`` devo criar um campo na tabela **gafanhotos (n)** que possa receber a chave primária da tabela **cursos (idcurso)**, identificando qual curso é seu preferido. Esse campo irá funcionar como chave estrangeira na tabela **gafanhotos**.
+   
+2. Após a criação do campo preciso identificar as referências.
+
+Confira a resposta na imagem abaixo:
+![Resposta da questão 14](../img/exercicio14.PNG)
+  
+3. Agora os registros dos cursos preferidos já podem ser adicionados na nova *coluna (cursopreferido)*. Essa coluna está recebendo o **idcurso** da tabela cursos e referenciando esse valor a partir do **id** que identifica o aluno na tabela gafanhotos.
+
+![Resposta da questão 15](../img/exercicio15.PNG)
+
+Para realizar esse procedimento para os demais alunos eu tenho que usar o comando update.
+
+Realizei esse procedimento até o aluno com o ``id = 12``
+![Resposta da questão 16](../img/exercicio16.PNG)
 
 >Créditos:
 > Playlist do curso de Banco de Dados - [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r).
